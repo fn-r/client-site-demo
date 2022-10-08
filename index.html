@@ -1,18 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="">
-    	<meta name="keywords" content="">
 
-		<title>Blackboard</title>
+<head>
+    <title>Majlis Tahlil Dan Doa Tahunan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/bulma/bulma.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico">
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<canvas id="canvas" width="300" height="150"></canvas>
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js" integrity="sha512-I+JeBiUY5B5/qJ6ey5CNqJ0yhAuNHBBbRjdM3alkabxCLz3++7hbeOScVSjyRouAihQIiint6Z2Or976vU2XuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="">
+        <div>
+            <div id="bg-overlay"></div>
+            <section id="banner"
+                class="section has-text-centered is-flex is-align-items-center is-justify-content-center is-flex-direction-column">
+                <div class="container is-flex is-align-items-center is-flex-direction-column is-justify-content-center">
+                    <small anim-banner class="is-block has-text-white has-text-weight-semibold is-uppercase mb-2">
+                    </small>
+                    <h1 anim-banner class="has-mw-4xl title is-size-1 mx-auto has-text-white mb-28 has-text-centered">Majlis Tahlil Dan Doa Arwah</h1>
+                    <div class="buttons is-justify-content-center mb-28">
+                        <a anim-banner class="button is-outlined is-white" href="#about">Tarikh</a>
+                        <a anim-banner class="button is-success has-text-white mr-4-tablet" href="#map">Tempat</a>
+                        <a anim-banner class="button is-outlined is-white" href="#about">Jam</a><br>
+                    </div>
+                    <div class="buttons is-justify-content-center mb-28">
+                        <a anim-banner class="button is-success has-text-white mr-4-tablet" href="assets/docs/Garis Panduan Menyambut Hari Raya Aidilfitri.pdf" download>Sila patuhi SOP dan protocol kesihatan</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="about" class="section py-12 has-background-warning-light">
+            <div class="container has-text-centered">
+                <div class="has-mw-3xl mx-auto">
+                    <p anim-about-info class="subtitle is-2 has-mw-3xl mb-8">Majlis Tahlil dan Membaca Doa Arwah</p>
+                    <p anim-about-info class="subtitle is-4 has-mw-3xl mb-8">Dengan hormat dan sukacita, menjunjung dan mempersilakan biskita serta keluarga, hadir ke majlis di atas.
+                    </p>
+                    <div anim-about-trigger class="is-flex is-justify-content-center is-align-items-center is-flex-direction-column mb-8">
+                        <span anim-about-info class="subtitle is-4 has-text-primary mb-2">PADA</span>
+                        <p anim-about-info class="subtitle has-text-weight-medium">
+                            Hari Raya Ketiga
+                        </p>
+                        <span anim-about-info class="subtitle is-4 has-text-primary mb-2 mt-8">JAM</span>
+                        <p anim-about-info class="subtitle has-text-weight-medium">
+                            3.30 Petang (Jemputan Hadir)
+                        </p>
+                        <p anim-about-info class="subtitle has-text-weight-medium">
+                            4.00 Petang (Bacaan Tahlil)
+                        </p>
+                        <p anim-about-info class="subtitle has-text-weight-medium">
+                            5.30 Petang (Majlis Berakhir)
+                        </p>
+                        <span anim-about-info class="subtitle is-4 has-text-primary mb-2 mt-8">TEMPAT</span>
+                        <p anim-about-info class="subtitle has-text-weight-medium">
+                            <a href="#map" class="has-text-black">Seri Kandi Cafe & Restaurant</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3977.0956020890453!2d114.199031!3d4.5768481!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3218abada7ef2a53%3A0xc474447e7cb5b670!2sSerikandi%20Cafe%20%26%20Restaurant!5e0!3m2!1sen!2sbn!4v1650344156140!5m2!1sen!2sbn" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section id="map" class="section py-12">
+            <div class="container">
+                <div class="has-background-white p-10 has-mw-md" style="border-radius: 6px;">
+                    <h2 class="title mb-4">Tempat Majlis</h2>
+                    <p class="subtitle is-size-6 mb-10">Serikandi Cafe & Restaurant</p>
+                    <div class="columns">
+                        <div class="column">
+                            <img class="mb-6" src="acros-assets/icons/contacts/location.svg" alt="">
+                            <h6 class="title is-size-5 has-leading-3 has-text-weight-semibold mb-2">Alamat</h6>
+                            <p class="is-block">Lot 4004 Simpang 36</p>
+                            <p class="is-block">Kuala Belait</p>
+                            <a class="mt-6 is-flex button is-primary" href="https://goo.gl/maps/Txs44Zv4MDo2vgW57"
+                                target="_blank">Google Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section py-16 has-background-grey-darker">
+            <div class="container">
+                <div class="columns is-align-items-center mb-0" style="border-bottom: 1px solid rgba(255,255,255,0.15)">
+                </div>
+                <div class="is-flex is-justify-content-end pt-5" style="opacity: 0.5;">
+                    <a class="title is-size-6 has-text-white" href="https://farahn.netlify.app/">Made by Farah</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+    <script src="js/anim.js"></script>
+</body>
+
 </html>

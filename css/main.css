@@ -1,0 +1,55 @@
+/**
+* This is a valid CSS file.
+**/
+body {
+    overflow-x: hidden !important;
+}
+
+h1 {
+    font-family: 'Lavishly Yours', cursive !important;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.4vw;
+}
+
+#banner {
+    width: 100vw;
+    height:100vh;
+}
+
+#bg-overlay {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(57 200 117);
+    position: absolute;
+}
+
+iframe {
+    border: 0;
+    width: 100vw;
+    position: absolute;
+    height: 60%;
+}
+
+@media screen and (min-width: 320px) {
+    iframe {
+        height: 61.2vh;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    iframe {
+        height: 58.2vh;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    iframe {
+        height: 52.5vh;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    iframe {
+        height: 55vh;
+    }
+}
